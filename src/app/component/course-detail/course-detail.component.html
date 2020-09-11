@@ -1,0 +1,24 @@
+<div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-6">
+        <form class='form-group' [formGroup]="courseDetailForm" (ngSubmit)="onSubmit()">
+            <label for="subject">Subject</label>
+            <input type="text" class="form-control" name="subject" formControlName="subject">
+            <label for="grade">Grade</label>
+            <input type="number" class="form-control" name="grade" formControlName="grade">
+            <label for="topicName">Topic Name</label>
+            <input type="text" class="form-control" name="topicName" formControlName="topicName">
+            <label for="subTopicName">Subtopic Name</label>
+            <input type="text" class="form-control" name="subTopicName" formControlName="subTopicName">
+            <label for="templateName">Template Name</label>
+            <select class="form-control" name="templateName" formControlName="templateName">
+                <option>Template 1</option>
+                <option>Template 2</option>
+                <option>Template 3</option>
+            </select>
+            <br>
+            <button class="btn btn-success">Submit</button>
+        </form>
+    </div>
+    <div class="col-md-4"></div>
+</div>
