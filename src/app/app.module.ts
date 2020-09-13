@@ -6,19 +6,23 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './component/common/header/header.component';
 import { CourseDetailComponent } from './component/course-detail/course-detail.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { QuestionComponent } from './component/question/question.component';
 
-@NgModule({
+@NgModule( {
   declarations: [
     AppComponent,
     HeaderComponent,
-    CourseDetailComponent
+    CourseDetailComponent,
+    QuestionComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
-})
+  bootstrap: [ AppComponent ]
+} )
 export class AppModule { }
