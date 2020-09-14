@@ -1,0 +1,34 @@
+<div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-6">
+        <form class='form-group' [formGroup]="questionForm" (ngSubmit)="onSubmit()">
+            <label for="line1">Line 1</label>
+            <input type="text" class="form-control" name="line1" formControlName="line1">
+            <label for="line1">Line 2</label>
+            <input type="text" class="form-control" name="line2" formControlName="line2">
+            <label for="line1">Line 3</label>
+            <input type="text" class="form-control" name="line3" formControlName="line3">
+            <label for="image1">Image 1</label>
+            <input type="text" class="form-control" name="image1" formControlName="image1">
+            <label for="image2">Image 2</label>
+            <input type="text" class="form-control" name="image2" formControlName="image2">
+            <label for="image3">Image 3</label>
+            <input type="text" class="form-control" name="image3" formControlName="image3">
+            <label for="image1_repeat">Image1 Repeat</label>
+            <input type="number" class="form-control" name="image1_repeat" formControlName="image1_repeat">
+            <label for="option1">Option 1</label>
+            <input type="text" class="form-control" name="option1" formControlName="option1">
+            <label for="option2">Option 2</label>
+            <input type="text" class="form-control" name="option2" formControlName="option2">
+            <label for="option3">Option 3</label>
+            <input type="text" class="form-control" name="option3" formControlName="option3">
+            <label for="option4">Option 4</label>
+            <input type="text" class="form-control" name="option4" formControlName="option4">
+            <label for="answer">Answer</label>
+            <input type="text" class="form-control" name="answer" formControlName="answer">
+            <br>
+            <button class="btn btn-success">Submit</button>
+        </form>
+    </div>
+    <div class="col-md-4"></div>
+</div>
